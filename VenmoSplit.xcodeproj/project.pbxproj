@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD88166016C87BA400D3067A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD88165F16C87BA400D3067A /* UIKit.framework */; };
+		FD88166216C87BA400D3067A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD88166116C87BA400D3067A /* Foundation.framework */; };
+		FD88166416C87BA400D3067A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD88166316C87BA400D3067A /* CoreGraphics.framework */; };
+		FD88166A16C87BA400D3067A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD88166816C87BA400D3067A /* InfoPlist.strings */; };
+		FD88166C16C87BA400D3067A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD88166B16C87BA400D3067A /* main.m */; };
+		FD88167016C87BA400D3067A /* VSplitAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD88166F16C87BA400D3067A /* VSplitAppDelegate.m */; };
+		FD88167216C87BA400D3067A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FD88167116C87BA400D3067A /* Default.png */; };
+		FD88167416C87BA400D3067A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD88167316C87BA400D3067A /* Default@2x.png */; };
+		FD88167616C87BA400D3067A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD88167516C87BA400D3067A /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FD88165C16C87BA400D3067A /* VenmoSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VenmoSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD88165F16C87BA400D3067A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FD88166116C87BA400D3067A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FD88166316C87BA400D3067A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FD88166716C87BA400D3067A /* VenmoSplit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VenmoSplit-Info.plist"; sourceTree = "<group>"; };
+		FD88166916C87BA400D3067A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD88166B16C87BA400D3067A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD88166D16C87BA400D3067A /* VenmoSplit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VenmoSplit-Prefix.pch"; sourceTree = "<group>"; };
+		FD88166E16C87BA400D3067A /* VSplitAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSplitAppDelegate.h; sourceTree = "<group>"; };
+		FD88166F16C87BA400D3067A /* VSplitAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSplitAppDelegate.m; sourceTree = "<group>"; };
+		FD88167116C87BA400D3067A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FD88167316C87BA400D3067A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FD88167516C87BA400D3067A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD88165916C87BA400D3067A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD88166016C87BA400D3067A /* UIKit.framework in Frameworks */,
+				FD88166216C87BA400D3067A /* Foundation.framework in Frameworks */,
+				FD88166416C87BA400D3067A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD88165316C87BA400D3067A = {
+			isa = PBXGroup;
+			children = (
+				FD88166516C87BA400D3067A /* VenmoSplit */,
+				FD88165E16C87BA400D3067A /* Frameworks */,
+				FD88165D16C87BA400D3067A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD88165D16C87BA400D3067A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD88165C16C87BA400D3067A /* VenmoSplit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD88165E16C87BA400D3067A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD88165F16C87BA400D3067A /* UIKit.framework */,
+				FD88166116C87BA400D3067A /* Foundation.framework */,
+				FD88166316C87BA400D3067A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD88166516C87BA400D3067A /* VenmoSplit */ = {
+			isa = PBXGroup;
+			children = (
+				FD88166E16C87BA400D3067A /* VSplitAppDelegate.h */,
+				FD88166F16C87BA400D3067A /* VSplitAppDelegate.m */,
+				FD88166616C87BA400D3067A /* Supporting Files */,
+			);
+			path = VenmoSplit;
+			sourceTree = "<group>";
+		};
+		FD88166616C87BA400D3067A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD88166716C87BA400D3067A /* VenmoSplit-Info.plist */,
+				FD88166816C87BA400D3067A /* InfoPlist.strings */,
+				FD88166B16C87BA400D3067A /* main.m */,
+				FD88166D16C87BA400D3067A /* VenmoSplit-Prefix.pch */,
+				FD88167116C87BA400D3067A /* Default.png */,
+				FD88167316C87BA400D3067A /* Default@2x.png */,
+				FD88167516C87BA400D3067A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD88165B16C87BA400D3067A /* VenmoSplit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD88167916C87BA400D3067A /* Build configuration list for PBXNativeTarget "VenmoSplit" */;
+			buildPhases = (
+				FD88165816C87BA400D3067A /* Sources */,
+				FD88165916C87BA400D3067A /* Frameworks */,
+				FD88165A16C87BA400D3067A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VenmoSplit;
+			productName = VenmoSplit;
+			productReference = FD88165C16C87BA400D3067A /* VenmoSplit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD88165416C87BA400D3067A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VSplit;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Basil Siddiqui";
+			};
+			buildConfigurationList = FD88165716C87BA400D3067A /* Build configuration list for PBXProject "VenmoSplit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FD88165316C87BA400D3067A;
+			productRefGroup = FD88165D16C87BA400D3067A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD88165B16C87BA400D3067A /* VenmoSplit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD88165A16C87BA400D3067A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD88166A16C87BA400D3067A /* InfoPlist.strings in Resources */,
+				FD88167216C87BA400D3067A /* Default.png in Resources */,
+				FD88167416C87BA400D3067A /* Default@2x.png in Resources */,
+				FD88167616C87BA400D3067A /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD88165816C87BA400D3067A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD88166C16C87BA400D3067A /* main.m in Sources */,
+				FD88167016C87BA400D3067A /* VSplitAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FD88166816C87BA400D3067A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD88166916C87BA400D3067A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD88167716C87BA400D3067A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FD88167816C87BA400D3067A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD88167A16C87BA400D3067A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VenmoSplit/VenmoSplit-Prefix.pch";
+				INFOPLIST_FILE = "VenmoSplit/VenmoSplit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FD88167B16C87BA400D3067A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VenmoSplit/VenmoSplit-Prefix.pch";
+				INFOPLIST_FILE = "VenmoSplit/VenmoSplit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD88165716C87BA400D3067A /* Build configuration list for PBXProject "VenmoSplit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD88167716C87BA400D3067A /* Debug */,
+				FD88167816C87BA400D3067A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD88167916C87BA400D3067A /* Build configuration list for PBXNativeTarget "VenmoSplit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD88167A16C87BA400D3067A /* Debug */,
+				FD88167B16C87BA400D3067A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD88165416C87BA400D3067A /* Project object */;
+}
