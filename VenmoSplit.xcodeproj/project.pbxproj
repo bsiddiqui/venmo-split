@@ -17,6 +17,7 @@
 		FD88167416C87BA400D3067A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD88167316C87BA400D3067A /* Default@2x.png */; };
 		FD88167616C87BA400D3067A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD88167516C87BA400D3067A /* Default-568h@2x.png */; };
 		FD88167D16C87BC900D3067A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD88167C16C87BC900D3067A /* MainStoryboard.storyboard */; };
+		FD8816CE16C87E9C00D3067A /* libVenmo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8816C516C87D6000D3067A /* libVenmo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = C9BD6C7A13EEE06400F4D8F4;
 			remoteInfo = VenmoSpecs;
+		};
+		FD8816CC16C87E9400D3067A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD8816A816C87D6000D3067A /* Venmo.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C9BD6C6913EEE06400F4D8F4;
+			remoteInfo = Venmo;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -117,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD8816CE16C87E9C00D3067A /* libVenmo.a in Frameworks */,
 				FD88166016C87BA400D3067A /* UIKit.framework in Frameworks */,
 				FD88166216C87BA400D3067A /* Foundation.framework in Frameworks */,
 				FD88166416C87BA400D3067A /* CoreGraphics.framework in Frameworks */,
@@ -350,6 +359,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				FD8816CD16C87E9400D3067A /* PBXTargetDependency */,
 			);
 			name = VenmoSplit;
 			productName = VenmoSplit;
@@ -440,6 +450,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FD8816CD16C87E9400D3067A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Venmo;
+			targetProxy = FD8816CC16C87E9400D3067A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		FD88166816C87BA400D3067A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -479,6 +497,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"${BUILT_PRODUCTS_DIR}/libVenmo.a",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -503,6 +526,11 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-force_load",
+					"${BUILT_PRODUCTS_DIR}/libVenmo.a",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -513,6 +541,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VenmoSplit/VenmoSplit-Prefix.pch";
+				HEADER_SEARCH_PATHS = Libraries/Venmo;
 				INFOPLIST_FILE = "VenmoSplit/VenmoSplit-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -524,6 +553,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VenmoSplit/VenmoSplit-Prefix.pch";
+				HEADER_SEARCH_PATHS = Libraries/Venmo;
 				INFOPLIST_FILE = "VenmoSplit/VenmoSplit-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
